@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crypto Login</title>
+    <link rel='stylesheet' href='/css/global.css'>
+    <link rel="stylesheet" href="/css/login.css">
+
+</head>
+
+<body>
+    <h1>
+        Login Here!
+    </h1>
+    <form id="accountCreationForm" action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Log in</button>
+        <!-- Creates the login labels as well as the login entries for the login page-->
+        <!-- There are multiple logins in the database but for this scenario try to use jgc0990 as the username and the password of 123 -->
+    </form>
+    <a href="/register" class="register-link">Click Here to Register!</a>
+    <!-- Links the user to the registration page if they press the registration button -->
+</body>
+<script src="/js/global.js"></script>
+
+</html>

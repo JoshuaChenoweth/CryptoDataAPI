@@ -1,0 +1,21 @@
+body {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.button-container button {
+    background-color: cornsilk;
+    text-align: center;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Arial Narrow Bold';
+    font-size: 25px;
+}
+/* Creates the css design for all the information in the account page once a user is logged in.

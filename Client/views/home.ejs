@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/CSS/home.css">
+    <link rel="stylesheet" href="/CSS/modal.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- links the stylesheets and displays csv file in home.ejs-->
+</head>
+
+<body>
+
+    <body onload="init()">
+        <button id="Home">Home</button>
+        <% if (isLoggedInUser) { %>
+            <button id="Portfolio" type="button">Portfolio</button>
+            <button id="YourAccount" type="button">Your Account</button>
+            <button id="Logout" type="button">Logout</button>
+            <% } else { %>
+                <button id="Login" type="button">Login</button>
+                <button id="Register" type="button">Register</button>
+                <% } %>
+                    <script src="/js/global.js"></script>
+                    <h1>Crypto Tracker</h1>
+                    <!-- These functions above present the user with logout, account, and portfolio only if they are logged in. Otherwise they are shown login and register-->
+                    <!-- Table structure -->
+                    <table id="crypto-table" class="crypto-table">
+                        <tr>
+                            <th>Rank</th>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Price (USD)</th>
+                            <th>24th change (%)</th>
+                            <th>Market Cap (USD)</th>
+                            <th>Supply</th>
+                            <th>Volume (24h)</th>
+                            <th>Volume-weighted average price (24h)</th>
+                        </tr>
+                    </table>
+                    <!-- Below is the modal window structure. Whenever a row is clicked, a modal window appears with these table headers and populates based off the cryptodata within the row clicked -->
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times; </span>
+                            <div>
+                                <h2>Cryptocurrency Details</h2>
+                            </div>
+                            <div class="modal-body">
+                                <table id="modalCryptoTable">
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Name</th>
+                                        <th>Symbol</th>
+                                        <th>Price (USD)</th>
+                                        <th>24th Change (%)</th>
+                                        <th>Market Cap (USD)</th>
+                                        <th>Supply</th>
+                                        <th>Volume (24h)</th>
+                                        <th>Volume-Weighted Average Price (24h)</th>
+                                        <th>Date added</th>
+                                        <th>Market Pairs</th>
+                                        <th>Infinite Supply(T/F)</th>
+                                    </tr>
+                                </table>
+                                <form id="buy">
+                                    <label for="shares">Share Quantity:</label><br>
+                                    <input type="text" id="Quantity"><br>
+                                    <input id="Buy" type="submit" value="Buy">
+                                </form>
+                                <div id="logContainer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- links our javascript pages -->
+                    <script src="/js/home.js"></script>
+                    <script src="/js/global.js"></script>
+
+
+
+
+    </body>
+
+</html>

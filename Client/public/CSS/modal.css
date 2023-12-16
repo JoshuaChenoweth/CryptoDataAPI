@@ -1,0 +1,53 @@
+#myModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: blue;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 1300px;
+  color: white;
+}
+
+/* CSS styles for the modal table */
+#modalCryptoTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#modalCryptoTable th,
+#modalCryptoTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Add hover effect to table rows */
+#modalCryptoTable tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* CSS styles for the close button */
+.close {
+  color: #333;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+
+.modal-content {
+    width: 100%;      
+    text-align: center; 
+}
+/* css styling for the modal content/*

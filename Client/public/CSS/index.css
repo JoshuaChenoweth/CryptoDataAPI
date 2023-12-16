@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 75px;
+    font-family: 'Arial Narrow Bold';
+    text-align: center;
+    color: azure;
+    margin-top: 255px;
+
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Arial Narrow Bold';
+    color: black;
+    display: inline-block;
+    background-color: azure;
+}
+/*Creates the header design and the body alignment*/
+.space-text h2 {
+    font-size: 50px;
+    opacity: 0;
+    animation: fadeInOut 3s infinite;/*Sets the pace and the count for the fade animations occurence*/
+}
+/*Outlines the font and text design for my text that says "press the spacebar to continue"*/
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+/*This CSS code changes the opacity of the text to make it appear as though it is fading in and out and
+it uses the space text css modifiers above to time itself.*/

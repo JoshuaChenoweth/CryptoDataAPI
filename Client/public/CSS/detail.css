@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    font-family: 'Arial Narrow Bold';
+    color: azure;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: cornsilk;
+    text-align: center;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Arial Narrow Bold';
+    font-size: 25px;
+}
+
+/*The code above creates the design for the header of the details page on my website
+and creates the button container design for my navigation buttons at the top of the page*/

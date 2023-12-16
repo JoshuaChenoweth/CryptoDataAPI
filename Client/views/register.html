@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crypto Detail</title>
+    <link rel='stylesheet' href='/css/global.css'>
+    <link rel="stylesheet" href = '/css/login.css'>
+
+</head>
+
+<body>
+    <h1>
+        Register Here!
+    </h1>
+    <form id="accountCreationForm" method="post" action="/register">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="DOB" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Create Account</button>
+<!-- These labels and entries allow the user to enter login info of their choosing which will be inserted into the database .-->
+    </form>
+    
+</body>
+<script src="/js/global.js"></script>
+
+</html>
